@@ -1,0 +1,84 @@
+.schemes-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.schemes-heading {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.schemes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.scheme-card {
+  flex: 0 0 45.5%;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  float: left;
+}
+.scheme-card:hover {
+  transform: scale(1.05);
+  background-color: #e3f3eb;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scheme-card h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.scheme-card p {
+  margin-top: 10px;
+}
+.apply-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #00796b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.add-scheme-button{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #fff;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.scheme-details {
+  margin-top: 10px;
+}
+
+.scheme-details p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .schemes-container {
+    max-width: 100%;
+  }
+
+  .scheme-card {
+    flex: 1;
+    width: 100%;
+  }
+}
